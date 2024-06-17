@@ -1,0 +1,13 @@
+l delimiter: [^a-zA-Z]+l[\s]+
+ml delimiter: [^a-zA-Z]+ml[\s]+
+g delimiter: [^a-zA-Z]+g[\s]+
+kg delimiter: [^a-zA-Z]+kg[\s]+
+oz delimiter: [^a-zA-Z]+oz[\s]+
+lb delimiter: [^a-zA-Z]+lb[\s]+
+pitted delimiter: [^a-zA-Z]+pitted[\s]+
+ounce delimiter: [^a-zA-Z]+ounce[s]*[\s]+
+cup delimiter: [^a-zA-Z]+cup[s]*[\s]+
+tablespoon delimiter: [^a-zA-Z]+tablespoon[s]*[\s]+
+teaspoon delimiter: [^a-zA-Z]+teaspoon[s]*[\s]+
+
+Capture informational content: [\[\(].*[\]\)]
