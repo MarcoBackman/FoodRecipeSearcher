@@ -3,7 +3,7 @@ A seperated repo from https://github.com/MarcoBackman/ReactProjects
 
 ## How to setup and run (server - backend)
 
-> Make sure to run server application before running beakflix application.<br/>
+> It's optional to run server application before running beakflix application.<br/>
 > server application serves as backend REST API server while beakflix serves as a dynamic frontend application.
 
 1. First, install Node.jS for react application
