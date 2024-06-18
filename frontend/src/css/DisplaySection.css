@@ -1,0 +1,23 @@
+section.displaySection {
+    display: -ms-grid;
+    display: grid;
+    position: relative;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+    text-align: center;
+    color: #8ca8da;
+    margin: 1em 2.5% 1em 2.5%;
+    min-height: 400px;
+
+    width: 95%;
+}
+
+@media only screen and (max-width: 768px) {
+    section.displaySection {
+        width: 100%;
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        margin: 1em 2.5% 1em 2.5%;
+    }
+}

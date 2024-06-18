@@ -1,0 +1,247 @@
+h1#main_title {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    color: #8ca8da;
+}
+
+div#db_read_section {
+    display: inline-block;
+    position: absolute;
+    margin-left: 1em;
+}
+
+div#add_recipe_frame {
+    display: none;
+    position: absolute;
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    min-height: 950px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+}
+
+div#add_recipe_panel {
+    display: block;
+    position: absolute;
+    width: 70%; /* Full width (cover the whole page) */
+    height: 90%; /* Full height (cover the whole page) */
+    min-height: 850px;
+    top: 5%;
+    left: 15%;
+    right: 15%;
+    bottom: 5%;
+    background-color: #ffffff;
+    border-radius: 25px;
+    z-index: 2;
+}
+
+div.top_bar {
+    display: block;
+    background-color: #8ca8da;
+    padding: 5px 0 5px 0;
+    border-radius: 25px 25px 0 0;
+    height: auto;
+}
+
+h2#main_title {
+    text-align: center;
+    margin-top: 1.2em;
+    color: #ffffff;
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, serif;
+    cursor: default;
+}
+
+div.label_bar {
+    display: flex;
+    position: relative;
+    width: 100%;
+    background-color: #8ca8da;
+    border-radius: 15px 15px 0 0;
+    color: #ffffff;
+    padding: 0.2em 0 0.2em 0;
+}
+
+label.quantity_title {
+    margin: 0 0 0 0;
+    text-align: center;
+    width: 20%;
+    font-weight: 500;
+}
+
+label.ingredient_title {
+    margin: 0 0 0 0;
+    text-align: center;
+    width: 80%;
+    font-weight: 500;
+}
+
+
+ul#ingredient_ul_list {
+    display: block;
+    height: 220px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0 1em 0 1em;
+}
+
+div.ingredient_block {
+    display: block;
+    width: 100%;
+}
+
+li.quantity_list {
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    list-style: none;
+    text-decoration: none;
+}
+
+li.ingredient_list {
+    display: inline-block;
+    width: 70%;
+    text-align: center;
+    list-style: none;
+    text-decoration: none;
+    word-wrap: break-word;
+    padding: 0 1em 0 1em;
+}
+
+button.ingredient_remove_btn {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    font-size: 0;
+}
+button.ingredient_remove_btn:before,
+button.ingredient_remove_btn:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 5px;
+    height: 20px;
+    background-color: #70737c;
+    transform: rotate(45deg) translate(-50%, -50%);
+    transform-origin: top left;
+    content: '';
+}
+button.ingredient_remove_btn:after {
+    transform: rotate(-45deg) translate(-50%, -50%);
+}
+
+button#close {
+    position: absolute;
+    right: 32px;
+    top: 32px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.3;
+}
+  
+button#close:hover {
+    opacity: 1;
+}
+
+button#close:before, button#close:after {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #333;
+}
+  
+button#close:before {
+    transform: rotate(45deg);
+}
+
+button#close:after {
+    transform: rotate(-45deg);
+}
+
+div.input_field {
+    position: relative;
+    height: 65%;
+}
+
+div.block_section {
+    display: flex;
+}
+
+div.bottom_input_section {
+    display: block;
+    position: relative;
+    background-color: aliceblue;
+    width: 80%;
+    height: 100%;
+    margin: 0 10% 0 10%;
+    border-radius: 15px;
+}
+
+label.input_label {
+    width: 12%;
+    text-align: right;
+    margin: 1em 0 1em 22%;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+input.input_section {
+    width: 30%;
+    height: 30px;
+    margin: 0.8em 0 0 10px;
+}
+
+
+div.bottom_input_section h2 {
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #8ca8da;
+    padding: 1em 0 0.2em 0;
+}
+
+button#add_ingredient_btn {
+    position: absolute;
+    width: 120px;
+    height: 50px;
+    border-radius: 35px;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #8ca8da;
+    color: #ffffff;
+    top: auto;
+    bottom: 3%;
+    left: 42%;
+}
+
+button#add_ingredient_btn:hover {
+    background-color: rgb(219, 219, 219);
+    color: rgb(121, 121, 121);
+}
+
+button#save_recipe_btn {
+    position: relative;
+    width: 120px;
+    height: 50px;
+    border-radius: 35px;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #8ca8da;
+    color: #ffffff;
+    margin: 1.8em 0 0 44%;
+}
+
+button#save_recipe_btn:hover {
+    background-color: rgb(219, 219, 219);
+    color: rgb(121, 121, 121);
+}

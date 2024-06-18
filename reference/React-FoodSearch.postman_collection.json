@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "ec080aaf-19d1-4b57-a2bd-5fba8244d191",
+		"name": "React-FoodSearch",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "21643228"
+	},
+	"item": [
+		{
+			"name": "Get All Regular Recipes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8081/api/recipe/getAllRecipes"
+			},
+			"response": []
+		},
+		{
+			"name": "Get All User Recipes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8081/api/recipe/getAllUserRecipe"
+			},
+			"response": []
+		},
+		{
+			"name": "add regular recipe",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"test name\",\r\n    \"description\": \"test description\",\r\n    \"image\": \"test image url\",\r\n    \"recipeYield\": \"test yield\",\r\n    \"cookTime\": \"test cook time\",\r\n    \"prepTime\": \"test prep time\",\r\n    \"ingredients\": \"test ingredients\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8081/api/recipe/addRecipe"
+			},
+			"response": []
+		},
+		{
+			"name": "add user recipe",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"test user recipe\",\r\n    \"description\": \"test description\",\r\n    \"image\": \"test image url\",\r\n    \"recipeYield\": \"test yield\",\r\n    \"cookTime\": \"test cook time\",\r\n    \"prepTime\": \"test prep time\",\r\n    \"ingredients\": \"test ingredients\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8081/api/recipe/addUserRecipe"
+			},
+			"response": []
+		}
+	]
+}

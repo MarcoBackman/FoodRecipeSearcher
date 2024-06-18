@@ -1,0 +1,109 @@
+article.recipe_card {
+    display: inline-block;
+    position: relative;
+    height: auto;
+    width: 95%;
+
+    margin: 1em 0 1em 0;
+    padding: 0;
+    border: 2px solid #868aa1;
+    border-radius: 10px;
+    transition-duration: 0.3s;
+}
+
+article.recipe_card:hover {
+    box-shadow: rgb(38, 57, 77) 0 20px 30px -10px;
+    transition-duration: 0.3s;
+}
+
+article.recipe_card > img {
+    transition-duration: 0.3s;
+}
+
+article.recipe_card:hover > img {
+    transition-duration: 0.3s;
+    filter: hue-rotate(13deg) brightness(115%);
+}
+
+img.recipe_img {
+    max-width:100%;
+    max-height:270px;
+    width: auto;
+    border-radius: 6px 6px 0 0;
+}
+
+h1.recipe_name {
+    font-size: 18px;
+}
+
+div.card_summary {
+    text-align: left;
+    color: #282c34;
+    margin: 0 1em 1em 1em;
+}
+
+div.summary_line p{
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, serif;
+}
+
+p.summary_cat {
+    font-weight: 600;
+    font-size: 12px;
+}
+
+div.summary_line p {
+    display: inline-flex;
+    margin: 0 0 0.5em 0;
+    padding: 0;
+    font-size: 12px;
+}
+
+
+div.button_section {
+    display: flex;
+    float: left;
+    margin: 0 1em 2em 1em;
+}
+
+button {
+    height: 30px;
+    margin: 0 0 0 0.2em;
+    background-color: aliceblue;
+    border: none;
+    border-radius: 10px;
+    font-size: 10px;
+    transition-duration: 0.3s;
+}
+
+button:hover {
+    background-color: #c9cfd5;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+button svg {
+    text-align: center;
+    margin: auto 0 auto 0;
+    width: 15px;
+    padding: 3px 0 0 0;
+}
+
+@media only screen and (max-width: 768px) {
+    article.recipe_card {
+        height: 600px;
+    }
+
+    img.recipe_img {
+        height: 300px;
+    }
+
+    div.summary_line p {
+        font-size: 18px;
+    }
+
+    div.button_section {
+        display: flex;
+        float: left;
+        margin: 0 1em 1em 1em;
+    }
+}

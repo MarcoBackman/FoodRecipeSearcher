@@ -1,0 +1,71 @@
+nav.nav_bar {
+    display: flex;
+    position: relative;
+    float: right;
+    padding: 0.5em 2em 0.5em 1em;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    background-color: aliceblue;
+    border: none;
+    border-radius: 10px;
+    font-size: 10px;
+    transition-duration: 0.3s;
+    color: #282c34;
+    text-align: center;
+}
+
+select:hover {
+    background-color: #c9cfd5;
+    color: #868aa1;
+}
+
+select:focus {
+    background-color: #c9cfd5;
+    color: #868aa1;
+}
+
+button#populate_btn {
+    display: block;
+}
+
+select.nav_button,
+button.nav_button {
+    width: 110px;
+    height: 50px;
+    font-size: 12px;
+    margin-right: 0.5em;
+    font-weight: 500;
+}
+
+select.nav_button:hover,
+button.nav_button:hover {
+    background-color: #c9cfd5;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+select#favorite_btn {
+    width: 100px;
+    height: 50px;
+    font-size: 12px;
+    margin-right: 2em;
+    font-weight: 500;
+}
+
+p#user_welcome {
+    display: flex;
+    margin: 1.2em 0 0 0;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+option.gro_options, option.fav_options {
+    display: block;
+    position: relative;
+    height: 50px;
+}

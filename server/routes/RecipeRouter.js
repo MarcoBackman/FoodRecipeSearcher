@@ -9,6 +9,7 @@ let UserRecipe = Recipe.getUserRecipeModel();
 
 //Post endpoint to write regular recipe data to DB
 router.post('/recipe/addRecipe', async (req, res) => {
+    logger.info("/recipe/addRecipe - Post request received");
     try {
         const newRecipe = new RegularRecipe({
             name: req.body.name,
@@ -45,6 +46,7 @@ router.get('/recipe/getAllRecipes', async (req, res) => {
 });
 
 router.post('/recipe/addUserRecipe', async (req, res) => {
+    logger.info("/recipe/addUserRecipe - Post request received");
     try {
         const existingRecipe = await RegularRecipe.findOne({ name: req.body.name });
         if(existingRecipe) {
